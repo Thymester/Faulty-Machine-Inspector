@@ -8,7 +8,7 @@ import Machines.HeatingMachine;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class ConsoleUI {
-    public static void mainMenu(Scanner scanner) {
+    public static void mainMenu(Scanner scanner, String currentVersion) {
         Machine machine = new CoolingMachine();
 
         boolean running = true;
@@ -16,7 +16,7 @@ public class ConsoleUI {
         int machineSelectionNum;
 
         while (running) {
-            System.out.println("Welcome to The Faulty Machine Inspector v0.2.0");
+            System.out.println("Welcome to The Faulty Machine Inspector v" + currentVersion);
             System.out.println("\nThis is a game where you need to inspect machines and figure out what is wrong with them!");
             System.out.println("What do you wish to do?\n\n1. Play Game\n2. Learn How to Play\n3. Future Features\n4. Exit Game");
 

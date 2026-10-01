@@ -1,5 +1,4 @@
 import UI.ConsoleUI;
-
 import java.io.IOException;
 import java.awt.Desktop;
 import java.net.URI;
@@ -12,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FaultyMachine {
-    private static final String CURRENT_VERSION = "0.2.0";
+    private static final String CURRENT_VERSION = "0.3.0";
     private static final String RELEASES_URL =
             "https://api.github.com/repos/Thymester/Faulty-Machine-Inspector/releases/latest";
     private static final String RELEASE_PAGE =
@@ -23,7 +22,7 @@ public class FaultyMachine {
 
         checkForNewRelease(scanner);
 
-        ConsoleUI.mainMenu(scanner);
+        ConsoleUI.mainMenu(scanner, CURRENT_VERSION);
     }
 
     private static void checkForNewRelease(Scanner scanner) {
@@ -79,7 +78,6 @@ public class FaultyMachine {
                 }
             }
         } catch (IOException exception) {
-            // The game should still start if GitHub cannot be reached.
         } catch (InterruptedException exception) {
             Thread.currentThread().interrupt();
         }

@@ -11,7 +11,7 @@ public class UpcomingFeatures {
                            5. Increasing the top score and streak by adding more rounds of machines to repair.
                            6. [Fixed all known critical bugs] And miscellaneous bug fixes.
 
-                           Any future ideas and suggestions that will be added to this list will be introduced in new version releases.
+                           This list is only updated on new version releases.
                            -=-=-=-=-= End of Upcoming Features =-=-=-=-=-
                            """);
     }
