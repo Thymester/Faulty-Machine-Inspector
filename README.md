@@ -2,7 +2,7 @@
 
 Faulty Machine Inspector is a Java console game about diagnosing and repairing malfunctioning machines. Each round presents an inspection report for a randomly selected machine and randomly marks one of its components as faulty. The player must enter the exact component name to repair the machine, while managing hints, penalties, score, and streaks.
 
-The current game version is `0.2.0`.
+The current game version is `0.3.0`.
 
 ## Requirements
 
